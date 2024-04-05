@@ -62,4 +62,4 @@ const personaje2={
   "created": "2021-11-02T17:24:37.458Z"
 }
 console.log(personaje2.status)
-document.write(personaje2.status)
+document.write(personaje2.name,' : ',personaje2.status)
