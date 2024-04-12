@@ -35,9 +35,7 @@ const Jugador={
   "Activo": true,
   "Sueldo": 1000000.99
 }
-console.log(Jugador.clubes[
-  0
-])
+//console.log(Jugador.clubes[])
 
 const personaje2={
   "id": 826,
@@ -61,5 +59,5 @@ const personaje2={
   "url": "https://rickandmortyapi.com/api/character/826",
   "created": "2021-11-02T17:24:37.458Z"
 }
-console.log(personaje2.status)
-document.write(personaje2.name,' : ',personaje2.status)
+//console.log(personaje2.status)
+//document.write(personaje2.name,' : ',personaje2.status)
