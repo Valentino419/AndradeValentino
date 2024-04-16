@@ -7,14 +7,32 @@ frutas.forEach(fruta=>{console.log(fruta)})
 */
 //for(const fruta of frutas){console.log(fruta)}
 // for(const fruta of frutas){if(fruta=='manzana'){console.log(fruta)}}
-var Character
-function Buscar(IdCharacter){  
-fetch('https://rickandmortyapi.com/api/character/'+IdCharacter)
-.then(response => response.json())
-.then(data => alert(data.name+" "+data.gender)).then (data => Character=data)
+var data = JSON.parse 
+function Buscar(IdCharacter,IdCharacter2){  
+fetch('https://rickandmortyapi.com/api/character/'+IdCharacter+","+IdCharacter2)
+.then(function (response) {
+    return response.json();
+})
+.then(function (data) {
+    ShowCharacters(data);
+})  
+
+
 }
 
-function ShowCharacter(Character){
+function ShowCharacters(data){
+    cargarImg(data[0]);
+    cargarImg(data[1]);
 
-    
+}
+function cargarImg(data){
+    let mainContainer = document.getElementById("Mostrar");
+    let div = document.createElement("div");
+    let img = document.createElement('img');
+    img.src = data.image;
+    img.innerHTML = 
+       div.innerHTML =data.name + ' ' + data.gender;
+       mainContainer.appendChild(img);
+       mainContainer.appendChild(div);
+
 }
