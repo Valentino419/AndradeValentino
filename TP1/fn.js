@@ -21,10 +21,20 @@ fetch('https://rickandmortyapi.com/api/character/'+IdCharacter+","+IdCharacter2)
 }
 
 function ShowCharacters(data){
-    cargarImg(data[0]);
+    let mainContainer = document.getElementById("Mostrar");
+    let img = document.createElement('img');
+    let div = document.createElement("div");
+    
+    cargarImg(data[0]);   
     cargarImg(data[1]);
+    if(data[0].gender==data[1].gender) {img.src = "tick.jpg";
+                                         div.innerHTML = "son compatibles";}
+    else {img.src = "Cross.jpg"; div.innerHTML = "son compatibles";};
+    mainContainer.appendChild(img);
+    
+}    
 
-}
+   
 function cargarImg(data){
     let mainContainer = document.getElementById("Mostrar");
     let div = document.createElement("div");

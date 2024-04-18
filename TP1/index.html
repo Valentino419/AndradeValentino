@@ -10,9 +10,11 @@
  
     <script src="fn.js"></script>
     <script src="json.js"></script>
-<tr> <td><input type="number" id="IdBuscar" name="IdBuscar"/></td> <td><input type="number" id="IdBuscar2" name="IdBuscar2"/></td></tr>
+<tr> <td><input type="number" id="IdBuscar" name="IdBuscar"/></td> 
+    <button name="button" onclick="Buscar(document.getElementById('IdBuscar').value,document.getElementById('IdBuscar2').value)">Buscar</button>
+    <td><input type="number" id="IdBuscar2" name="IdBuscar2"/></td></tr>
 
-<tr><button name="button" onclick="Buscar(document.getElementById('IdBuscar').value,document.getElementById('IdBuscar2').value)">Buscar</button>
+<tr>
 <div id="Mostrar"></div></tr>
 
 
