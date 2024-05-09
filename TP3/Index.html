@@ -6,20 +6,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+ 
+</style>
 
 </head>
 
 <body>
+  <Table>
+    <tr>
+      <td><input type="number" id="Imput-0" name="IdBuscar1" /></td>
+      <td><input type="number" id="Imput-1" name="IdBuscar2" /></td>
+    </tr>
+    <tr>
+      <th><button name="button1" id="Boton0" onclick="Seleccion(document.getElementById('Imput-0').value,0)">ingresar 1</button></th>
+      <th><button name="button" id="boton2" onclick="Seleccion(document.getElementById('Imput-1').value,1)">ingresar 2</button></th>
+    </tr>
+    <tr>
+      <td>
+        <div id="imagSet0"></div>
+      </td>
+      <td>
+        <div id="imagSet1"></div>
+      </td>
 
- 
- 
-  <div id="map"></div>
-  <button name="button" onclick="BuscarUsuario()">Ramndom User</button>
-  <div id="error" style="color: red;"></div>
+    </tr>
+
+
+  </Table>
+
+
+  <table>
+    <tr>
+      <td>
+        <div id="Mostrar1"></div>
+      </td>
+      <div id="Mostrar2"></div>
+    </tr>
+
+  </table>
 </body>
 
 </html>
-<link rel="stylesheet" href="Styles.Css" />
-
-<script src="Map.js"></script>
-<script src="fn.js"></script>
+<link rel="stylesheet" href="Css/style.Css" />
+<script src="Js/fn.js"></script>
